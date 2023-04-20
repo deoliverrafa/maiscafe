@@ -1,0 +1,213 @@
+:root{
+    --cafe-com-leite: #a38068;
+    --cafe: #513522;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    transition: all 0.3s ease-in-out;
+}
+
+
+li{
+    list-style: none;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: gray ;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+a:hover{
+    color: var(--cafe-com-leite);
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    
+}
+
+header:hover{
+    position: relative;
+    padding: 0 2rem;
+    box-shadow: 0px 8px 10px lightgray;
+    border-radius: .5em;
+    backdrop-filter: blur(3px);
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .fa-solid.fa-bars{
+    display: none;
+}
+
+.navbar .fa-solid.fa-plus{
+    font-size: 1.5em;
+    margin-right: .5em;
+    transition: .8s ease-in-out;
+    color: var(--cafe-com-leite);
+}
+
+.navbar .fa-solid.fa-plus:hover{
+    transform: scale(1.5) rotate(360deg);
+    color: var(--cafe-com-leite);
+}
+
+
+
+.navbar .actn-button{
+    font-size: 1em;
+    width: 6.5em;
+    border-radius: .3em;
+}
+
+.navbar .actn-button:hover{
+    box-shadow: 3px 5px 5px gray;
+}
+
+.navbar .nomelogo{
+    font-size: 1.2em;
+    transform: translate(10px 0px 0px);
+}
+
+.navbar .nomelogo:hover{
+    transform: scale(1.2);
+    
+}
+
+
+.navbar .logo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem ;
+}
+
+.navbar .toogle-btn{
+    display: flex;
+    font-size: 1.5em;
+    
+}
+
+.navbar .toogle-btn:hover{
+    color: var(--cafe);
+    cursor: pointer;
+    
+}
+
+.home{
+    background-image: url(./imagens/background-cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 42em;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .merchant{
+    color: whitesmoke;
+    font-family: "Poppins" sans-serif;
+    font-size: 2.3em;
+}
+
+.home p{
+    color: whitesmoke;
+    width: 30em;
+
+}
+
+.home .merchant,p{
+    margin-right: auto auto;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+@media(max-width: 730px){
+    
+    .navbar .links, .navbar .actn-button{
+        display: none;
+    }
+    .navbar .fa-solid.fa-bars{
+        display: flex;
+    }
+    .navbar .toogle-btn{
+        display: flex;
+    }
+    .dropdown_menu{
+        height: 240px;
+    }
+
+    .home{
+        background-image: url(./imagens/background-cafe.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 42em;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home .dropdown_menu.active{
+        display: flex;
+        position: absolute;
+        right: 3em;
+        top: 5em;
+        animation-name: example;
+        animation-duration: 1s ease-in-out;
+        animation-direction: normal;
+        box-shadow: 0px 0px 30px var(--cafe-com-leite);
+        backdrop-filter: blur(2px);
+        height: 11em;
+        width: 7em;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    @keyframes example {
+        0%   {transform: translate3d(0em 50em 0em);}
+        100% {transform: translate3d(0em 0em 0em)}
+      }
+
+    .home h2{
+        display: flex;
+    }
+
+    .home .dropdown_menu.active a{
+        color: whitesmoke;
+        text-decoration: none;
+        
+
+    }
+
+    .home .dropdown_menu.active li{
+        padding: .4em 0em;
+    }
+
+}
