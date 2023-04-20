@@ -9,6 +9,7 @@
     padding: 0;
     font-family: "Poppins";
     transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 
@@ -23,7 +24,6 @@ li{
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    
 }
 
 a:hover{
@@ -146,6 +146,62 @@ header:hover{
 .dropdown_menu{
     display: none;
 }
+
+.produtcs .product-slider{
+    padding: 1rem;
+}
+
+.produtcs 
+
+.produtcs .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.produtcs .product-slider .box{
+    background: #fff;
+    border-radius: .5em;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    box-shadow: 0px 3px 5px var(--cafe-com-leite);
+
+}
+
+.produtcs .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: 1rem solid rgba(0, 0, 0, .1);
+}
+
+.produtcs .product-slider .box img{
+    height: 20rem;
+    border-radius: 3px;
+}
+
+.produtcs .product-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--cafe-com-leite);
+}
+
+#products .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#products .heading .h1p1:hover{
+    color: var(--cafe);
+}
+
+#products .heading .h1p2:hover{
+    color: var(--cafe-com-leite);
+}
+
+
+
+
 
 @media(max-width: 730px){
     
