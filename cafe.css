@@ -158,6 +158,9 @@ header:hover{
     .navbar .toogle-btn{
         display: flex;
     }
+    .navbar .toogle-btn:hover{
+        transform: scale(1.2);
+    }
     .dropdown_menu{
         height: 240px;
     }
