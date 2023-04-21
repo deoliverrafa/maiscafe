@@ -15,7 +15,7 @@
 
 li{
     list-style: none;
-    
+    cursor: none;
 }
 
 .navbar a{
@@ -24,6 +24,7 @@ li{
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 a:hover{
@@ -199,9 +200,139 @@ header:hover{
     color: var(--cafe-com-leite);
 }
 
+.modal-register.active{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-register{
+    background: transparent;
+}
+
+.modal.active{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 17em;
+    height: 33em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin: 0px;
+    padding: 0px;
+    transform: scale(0);
+    animation: animationregister .3s ease forwards;
+    right: 3em;
+}
+
+@keyframes animationregister {
+    to{
+       transform: scale(1);
+       right: 0;
+    }
+}
+
+.modal{
+    display: none;
+    background: none;
+}
+
+.modal h3{
+    display: flex;
+    position: absolute;
+    margin-top: -26em;
+}
+
+.modal h2{
+    display: flex;
+    position: absolute;
+    margin-top: -17.5em;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.register-form .fa-solid.fa-plus{
+    font-size: 1em;
+    margin-top: .25em;
+    transition: .8s ease-in-out;
+}
+
+.register-form .fa-solid.fa-plus:hover{
+    font-size: 1em;
+    margin-top: .25em;
+    transform: rotateY(360deg);
+}
+
+.modal input{
+    display: grid;
+    padding: 3px;
+    margin: 1em 0em 1em 0em;
+    outline-offset: -1rem;
+    border-width: 1.3px;
+    border-radius: 2px;
+    
+}
+
+.modal input:focus{
+    border-radius: .5em;
+    box-shadow: 0px 3px 5px var(--cafe-com-leite);
+}
+
+.modal input:focus{
+    outline-offset: 0rem;
+    outline: .3rem solid rgba(0, 0, 0, .1);
+    transform: scale(1.2);
+}
 
 
+.modal .form-register{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
+.modal p{
+    text-align: center;
+    font-weight: bolder;
+    height: 30px;
+    padding: 0em 0em 2em 0em;
+    
+}
+
+.modal .form-register .btn-login{
+    margin-top: 2em;
+}
+
+.modal-register .modal .icon-close{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 10px;
+    background-color: lightgray;
+    border-radius: .5em;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+
+.modal-register .modal .icon-close:hover{
+    box-shadow: 0px 0px 10px var(--cafe-com-leite);
+}
+
+.modal-register .modal .icon-close:focus{
+    box-shadow: 0px 0px 10px var(--cafe-com-leite);
+}
 
 @media(max-width: 730px){
     
@@ -235,11 +366,10 @@ header:hover{
     .home .dropdown_menu.active{
         display: flex;
         position: absolute;
-        right: 2em;
+        right: 0em;
         top: 4.5em;
-        animation-name: example;
-        animation-duration: 1s ease-in-out;
-        animation-direction: normal;
+        animation: example .3s ease forwards;
+        transform: scale(0);
         box-shadow: 0px 0px 30px var(--cafe-com-leite);
         backdrop-filter: blur(2px);
         height: 15em;
@@ -251,8 +381,11 @@ header:hover{
 
 
     @keyframes example {
-        0%   {transform: translate3d(0em 50em 0em);}
-        100% {transform: translate3d(0em 0em 0em)}
+        to{
+            transform: scale(1);
+            right: 2em;
+        }
+        
       }
 
     .home h2{
@@ -262,8 +395,7 @@ header:hover{
     .home .dropdown_menu.active a{
         color: whitesmoke;
         text-decoration: none;
-        
-
+        font-weight: bold;
     }
 
     .home .dropdown_menu.active li{
@@ -274,6 +406,11 @@ header:hover{
         font-size: 1em;
         display: flex;    
         color: whitesmoke;
+        cursor: pointer;
+    }
+
+
+    .home .dropdown_menu.active{
         cursor: pointer;
     }
 
