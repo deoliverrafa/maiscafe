@@ -72,6 +72,3 @@ xmarklogin.onclick = function (){
     modalregister.classList.remove('active')
     modalloginform.classList.remove('active')
 }
-
-
-

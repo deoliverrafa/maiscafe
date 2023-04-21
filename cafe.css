@@ -150,9 +150,11 @@ header:hover{
 
 .produtcs .product-slider{
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.produtcs 
 
 .produtcs .product-slider:first-child{
     margin-bottom: 2rem;
@@ -163,8 +165,10 @@ header:hover{
     border-radius: .5em;
     text-align: center;
     padding: 3rem 2rem;
+    width: 30em;
     outline-offset: -1rem;
     box-shadow: 0px 3px 5px var(--cafe-com-leite);
+    
 
 }
 
@@ -232,6 +236,13 @@ header:hover{
     animation: animationregister .3s ease forwards;
     right: 3em;
 }
+
+.politica{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 @keyframes animationregister {
     to{
@@ -467,6 +478,10 @@ header:hover{
     border-radius: 1em;
 }
 
+.swiper.mySwiper{
+    display: none;
+}
+
 
 
 
@@ -549,7 +564,5 @@ header:hover{
     .home .dropdown_menu.active{
         cursor: pointer;
     }
-
-    
 
 }
