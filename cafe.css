@@ -352,6 +352,124 @@ header:hover{
     box-shadow: 0px 0px 10px var(--cafe-com-leite);
 }
 
+/* Estilização form Login */
+
+
+.modal-login-form.active{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0em;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: flex;
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    animation: example .3s ease forwards;
+    
+}
+
+@keyframes example {
+    to{
+        transform: scale(1);
+        right: 2em;
+    }
+    
+  }
+
+.home h2{
+    display: flex;
+
+}
+
+.modal-login-form{
+    display: none;
+}
+
+.modal-login{
+    background-color: #fff;
+    display: grid;
+    height: 14em;
+    width: 18em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.modal-login-form .icon-close{
+    position: absolute;
+    display: flex;
+    right: -.8em;
+    top: -.8em;
+    background-color: lightgray;
+    border-radius: 3em;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    
+}
+
+
+
+.modal-login-form .icon-close:hover{
+    box-shadow: 0px 0px 10px var(--cafe-com-leite);
+}
+
+.modal-login-form .fa-solid.fa-plus{
+    transition: 0.3s ease-in-out;
+}
+
+.modal-login-form .fa-solid.fa-plus:hover{
+    transform: rotateX(360deg);
+}
+
+
+.modal-login .login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-login form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.modal-login input{
+    margin: .5em 0em .5em 0em;
+    width: 16em;
+    padding: .4em;
+    box-shadow: 0px 0px 0px var(--cafe);
+}
+
+.modal-login h2:hover{
+    color: var(--cafe);
+}
+
+.modal-login .input-btn-login{
+    width: 10em;
+    margin-left: 3.3em;
+    font-weight: bold;
+}
+
+.modal-login .input-btn-login:focus{
+    background: transparent;
+}
+
+.modal-login .input:focus{
+    border-radius: 1em;
+}
+
+
+
+
 @media(max-width: 730px){
     
     .navbar .links, .navbar .actn-button{

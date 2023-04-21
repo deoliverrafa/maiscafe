@@ -8,12 +8,16 @@ const registre = document.querySelector('.actn-button');
 const registredropdown = document.querySelector('.home .actn-button')
 const modalmenu = document.querySelector('.modal');
 const registerclose = document.querySelector('.modal-register .icon-close .fa-solid.fa-xmark')
-
+const btncadastrar = document.querySelector('.modal .input-btn-cadastrar')
+const btnlogin = document.querySelector('.modal .btn-login')
+const btnloginclose = document.querySelector('.modal-login .fa-solid.fa-xmark')
+const modalloginform = document.querySelector('.modal-login-form')
+const buttonformlogin = document.querySelector('.modal-login-form .input-btn-login')
+const xmarklogin = document.querySelector('.modal-login-form .icon-close')
 
 hamburger.onclick = function (){
     dropdownmenu.classList.toggle('active')
 }
-
 
 produtos.onclick = function (){
     dropdownmenu.classList.remove('active')
@@ -46,7 +50,28 @@ registredropdown.onclick = function (){
     modalregister.classList.toggle('active')
 }
 
+btncadastrar.onclick = function (){
+    modalmenu.classList.remove('active')
+    modalregister.classList.remove('active')
+    alert('Cadastro realizado com sucesso')
+}
 
+btnlogin.onclick = function (){
+    modalmenu.classList.remove('active')
+    modalregister.classList.remove('active')
+    modalloginform.classList.toggle('active')
+}
+
+buttonformlogin.onclick = function(){
+    modalregister.classList.remove('active')
+    modalloginform.classList.remove('active')
+    alert('Login realizado com sucesso')
+}
+
+xmarklogin.onclick = function (){
+    modalregister.classList.remove('active')
+    modalloginform.classList.remove('active')
+}
 
 
 
