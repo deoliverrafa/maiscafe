@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>MaisCafé</title>
+</head>
+<body>
+    
+    <header>
+    <div class="navbar">
+        <div class="logo"><i class="fa-solid fa-plus" style="color: #3b3b3b;"></i><a href="#" class="nomelogo">Café</a></div>
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="">Politica</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+
+        <a class="actn-button">Registre-se</a>
+
+        <div class="toogle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="home">
+        <div class="dropdown_menu ">
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="#products" class="btn-produtos">Produtos</a></li>
+                <li><a href="" class="btn-politica">Politica</a></li>
+                <li><a href="" class="btn-contato">Contato</a></li>
+                <li><a class="actn-button">Register</a></li>
+            </ul>
+        </div>
+        <h2 class="merchant">O melhor café moído na hora</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, sequi accusantium repellendus adipisci nisi deserunt, deleniti modi dignissimos quod veniam asperiores ab quaerat esse fugiat dolor cupiditate, temporibus corporis laboriosam.</p>
+    </div>
+</section>
+
+
+
+<section class="produtcs" id="products">
+    <h1 class="heading"> <span class="h1p1"> Escolha já o seu </span> &ThinSpace; <span class="h1p2"> Café</span></h1>
+
+    <div class="product-slider">
+        <div class="wrapper">
+        <div class="box">
+            <img src="./imagens/café ao leite.jpg" alt="café ao leite" srcset="">
+            <h3> Café ao leite</h3>
+            <div class="price"> R$ 6.99</div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#">Adicionar ao Carrinho</a>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="produtcs" id="products">
+    <div class="product-slider">
+        <div class="wrapper"></div>
+        <div class="box">
+            <img src="./imagens/café expresso.jpg" alt="café expresso" srcset="">
+            <h3> Café Expresso</h3>
+            <div class="price"> R$ 8.99</div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#">Adicionar ao Carrinho</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="produtcs" id="products">
+    <div class="product-slider">
+        <div class="wrapper"></div>
+        <div class="box">
+            <img src="./imagens/café preto tradicional.jpeg" alt="café ao leite" srcset="">
+            <h3> Café Preto</h3>
+            <div class="price"> R$ 5.99</div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#">Adicionar ao Carrinho</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="produtcs" id="products">
+    <div class="product-slider">
+        <div class="wrapper"></div>
+        <div class="box">
+            <img src="./imagens/lattle coffe.jpeg" alt="café ao leite" srcset="">
+            <h3> Lattle Coffe</h3>
+            <div class="price"> R$ 10.99</div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#">Adicionar ao Carrinho</a>
+        </div>
+    </div>
+
+</section>
+
+<div class="modal-register" id="modal-register">
+    <div class="modal">
+        <span class="icon-close"> <i class="fa-solid fa-xmark"></i></span>
+        <h3> Venha tomar</h3>
+        <h2 class="register-form"> <i class="fa-solid fa-plus"> &ZeroWidthSpace; &ZeroWidthSpace;</i>Café</h2>
+        <form action="cadastrar" class="form-register">
+            <input type="text" placeholder="Nome-Completo" value="">
+            <input type="text" placeholder="Nome da mãe" value="">
+            <input type="text" placeholder="Nome da Pai" value="">
+            <input type="date" value="">
+            <input type="password" placeholder="Senha" value="">
+            <input class="input-btn-cadastrar" type="submit" value="cadastrar" form="cadastrar">
+            <p>Já possui conta? <br> faça o seu login</p> <input type="button" value="login" class="btn-login">
+        </form>
+    </div>
+</div>
+
+    <script src="cafe.js"></script>
+    <script src="https://kit.fontawesome.com/ed17decac5.js" crossorigin="anonymous"></script>
+</body>
+</html>
