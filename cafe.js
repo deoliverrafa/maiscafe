@@ -1,7 +1,6 @@
 const hamburger = document.querySelector('.toogle-btn .fa-solid.fa-bars');
 const dropdownmenu = document.querySelector('.dropdown_menu');
 const produtos = document.querySelector('.btn-produtos');
-const politica = document.querySelector('.btn-politica');
 const contato = document.querySelector('.btn-contato');
 const modalregister = document.querySelector('.modal-register');
 const registre = document.querySelector('.actn-button');
@@ -20,11 +19,6 @@ hamburger.onclick = function (){
 }
 
 produtos.onclick = function (){
-    dropdownmenu.classList.remove('active')
-}
-
-
-politica.onclick = function (){
     dropdownmenu.classList.remove('active')
 }
 
