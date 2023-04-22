@@ -517,13 +517,6 @@ header:hover{
     .dropdown_menu{
         height: 240px;
     }
-
-    body{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-    }
-
     .home{
         background-image: url(./imagens/litebackground-cafe.jpg);
         background-size: cover;
