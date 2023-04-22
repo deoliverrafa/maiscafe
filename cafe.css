@@ -242,8 +242,6 @@ header:hover{
     background: transparent;
 }
 
-
-
 .modal.active{
     background: #fff;
     display: flex;
@@ -542,6 +540,8 @@ header:hover{
         height: 240px;
     }
 
+    
+
     .home{
         background-image: url(./imagens/litebackground-cafe.jpg);
         background-size: cover;
@@ -606,3 +606,16 @@ header:hover{
     }
 
 }
+
+@media(max-width: 890px){
+        
+    .modal-register.active{
+        min-width: 890px;
+        min-height: 1890px;
+    
+    }
+
+}
+
+
+
