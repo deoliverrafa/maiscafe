@@ -13,6 +13,7 @@ const btnloginclose = document.querySelector('.modal-login .fa-solid.fa-xmark')
 const modalloginform = document.querySelector('.modal-login-form')
 const buttonformlogin = document.querySelector('.modal-login-form .input-btn-login')
 const xmarklogin = document.querySelector('.modal-login-form .icon-close')
+const addtocart = document.querySelector('.add-to-cart')
 
 hamburger.onclick = function (){
     dropdownmenu.classList.toggle('active')
@@ -56,7 +57,7 @@ btnlogin.onclick = function (){
     modalloginform.classList.toggle('active')
 }
 
-buttonformlogin.onclick = function(){
+buttonformlogin.onclick = function login (){
     modalregister.classList.remove('active')
     modalloginform.classList.remove('active')
     alert('Login realizado com sucesso')

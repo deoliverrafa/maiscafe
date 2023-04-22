@@ -521,6 +521,40 @@ header:hover{
     font-weight: bold;
 }
 
+.footer-father{
+    height: 14em;
+}
+
+.footer-heading{
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-heading a {
+    font-size: 1em;
+    display: flex;
+    padding: .5em 0.5em .5em 0em;
+}
+
+.footer-heading a i{
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    margin-left: 1em;
+    transition: 120ms ease-in-out;
+}
+
+.footer-heading a i:hover{
+    transform: scale(1.2);
+}
+
+.footer-heading a:hover{
+    color: var(--cafe-com-leite);
+}
+
 
 @media(max-width: 730px){
     
@@ -605,6 +639,30 @@ header:hover{
         height: 14em;
     }
 
+    .footer-heading{
+        text-align: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .footer-heading a {
+        font-size: 1em;
+        display: flex;
+        padding: .5em 0.5em .5em 0em;
+    }
+
+    .footer-heading a i{
+        position: relative;
+        right: 0;
+        top: 0;
+        display: flex;
+        margin-left: 1em;
+    }
+
+    .footer-heading a:hover{
+        color: var(--cafe-com-leite);
+    }
 }
 
 @media(max-width: 890px){
@@ -615,7 +673,9 @@ header:hover{
     
     }
 
+    .modal-login-form.active{
+        min-width: 890px;
+        min-height: 1890px;
+    }
+
 }
-
-
-
