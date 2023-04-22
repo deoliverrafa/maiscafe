@@ -668,14 +668,13 @@ header:hover{
 @media(max-width: 890px){
         
     .modal-register.active{
-        min-width: 890px;
-        min-height: 1890px;
+        min-width: 1000px;
+        min-height: 2400px;
     
     }
 
     .modal-login-form.active{
-        min-width: 890px;
-        min-height: 1890px;
+        min-width: 1000px;
+        min-height: 2400px;
     }
-
 }
