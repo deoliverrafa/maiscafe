@@ -242,6 +242,8 @@ header:hover{
     background: transparent;
 }
 
+
+
 .modal.active{
     background: #fff;
     display: flex;
@@ -255,7 +257,6 @@ header:hover{
     padding: 0px;
     transform: scale(0);
     animation: animationregister .3s ease forwards;
-    right: 3em;
 }
 
 .politica{
@@ -275,6 +276,7 @@ header:hover{
 .modal{
     display: none;
     background: none;
+    
 }
 
 .modal h3{
@@ -503,7 +505,23 @@ header:hover{
     display: none;
 }
 
+.footer-father{
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    height: 10em;
+}
+.footer-container .footer-heading{
+    display: grid;
+    align-items: center;
+    padding: 0em 6em;
+}
 
+.footer-heading a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
 
 @media(max-width: 730px){
@@ -537,8 +555,8 @@ header:hover{
 
     .home .dropdown_menu.active{
         display: flex;
-        position: absolute;
-        right: 0em;
+        position: fixed;
+        right: 2em;
         top: 4.5em;
         animation: example .3s ease forwards;
         transform: scale(0);
@@ -555,9 +573,7 @@ header:hover{
     @keyframes example {
         to{
             transform: scale(1);
-            right: 2em;
-        }
-        
+        } 
       }
 
     .home h2{
@@ -581,10 +597,12 @@ header:hover{
         cursor: pointer;
     }
 
+}
 
-    .home .dropdown_menu.active{
-        cursor: pointer;
+@media(max-width: 993px){
+        
+    .footer-father{
+        height: 14em;
     }
 
-    
 }
