@@ -134,11 +134,11 @@
         <h3> Venha tomar</h3>
         <h2 class="register-form"> <i class="fa-solid fa-plus"> &ZeroWidthSpace; &ZeroWidthSpace;</i>Café</h2>
         <form action="cadastrar" class="form-register">
-            <input type="text" placeholder="Nome-Completo" value="">
-            <input type="text" placeholder="Nome da mãe" value="">
+            <input type="text" placeholder="Nome-Completo" value="" required>
+            <input type="text" placeholder="Nome da mãe" value="" required>
             <input type="text" placeholder="Nome da Pai" value="">
-            <input placeholder="Data" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-            <input type="password" placeholder="Senha" value="">
+            <input placeholder="Data" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"  required/>
+            <input type="password" placeholder="Senha" value="" required>
             <input class="input-btn-cadastrar" type="submit" value="cadastrar" form="cadastrar">
             <p>Já possui conta? <br> faça o seu login</p> <input type="button" value="login" class="btn-login">
         </form>
@@ -150,8 +150,8 @@
         <span class="icon-close"> <i class="fa-solid fa-xmark"></i></span>        
         <h2 class="login-form"> <i class="fa-solid fa-plus"> &ZeroWidthSpace; &ZeroWidthSpace;</i>Café</h2>
         <form action="login" class="form-login">
-            <input type="text" placeholder="Nome-Completo" value="">
-            <input type="password" placeholder="Senha" value="">
+            <input type="text" placeholder="Nome-Completo" value="" required>
+            <input type="password" placeholder="Senha" value="" required>
             <input class="input-btn-login" type="submit" value="login" form="form-login">
         </form>
     </div>

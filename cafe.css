@@ -268,6 +268,7 @@ header:hover{
     to{
        transform: scale(1);
        right: 0;
+       opacity: 100%;
     }
 }
 
@@ -396,21 +397,13 @@ header:hover{
     left: 0;
     background-color: rgba(0, 0, 0, .5);
     z-index: 2000;
+    opacity: 0%;
     display: flex;
-    transform: scale(0);
     justify-content: center;
     align-items: center;
-    animation: example .3s ease forwards;
+    animation: animationregister .3s ease forwards;
     
 }
-
-@keyframes example {
-    to{
-        transform: scale(1);
-        right: 2em;
-    }
-    
-  }
 
 .home h2{
     display: flex;
@@ -601,6 +594,7 @@ header:hover{
         justify-content: center;
         align-items: center;
         border-radius: 1em;
+        background-color: rgba(255, 255, 255, .1);
     }
 
 
